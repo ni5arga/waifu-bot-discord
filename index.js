@@ -1,22 +1,26 @@
 require('dotenv').config();
-const Discord = require('discord.js');
-const axios = require('axios');
+
+import { Client } from 'discord.js';
+import { get } from 'axios';
+
 const TOKEN = process.env.TOKEN;
-const bot = new Discord.Client();
-const targets = ['-waifu', '!waifu', '/waifu', '=waifu'];
+const Tsuzumi = new Client();
+// Prefix is /
+const commands = ['/waifu', '/neko', '/shinobu', '/megumin'];
 
-bot.login(TOKEN);
 
-bot.on('ready', () => {
-  console.info(`I'm ready, logged in as ${bot.user.tag}`);
+Tsuzumi.login(TOKEN);
+
+Tsuzumi.on('ready', () => {
+  console.info(`I'm ready. I've logged in as ${Tsuzumi.user.tag}`);
 });
 
-bot.on('message', (msg) => {
-  if (msg.author.bot) return;
+Tsuzumi.on('message', (msg) => {
+  if (msg.author.Tsuzumi) return;
 
-  const foundWord = targets.find((target) => msg.content.includes(target));
-  if (foundWord) {
-    axios.get('https://api.waifu.pics/sfw/waifu').then((response) => {
+  const detectedCommand = commands.find((well) => msg.content.includes(well));
+  if (detectedCommand) {
+    get('https://api.waifu.pics/${detectedCommand}').then((response) => {
 
       msg.channel.send(
         `Here you go ---> ${response.data.url}`

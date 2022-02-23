@@ -1,10 +1,13 @@
 # Waifu Discord Bot
-A Discord bot to fetch random waifu images!
+A Discord bot to fetch random waifu images! 
 ## Commands
 
--`/waifu` - Get Random Waifu Image
+`/waifu` - Get Random Waifu Image
+ &nbsp;
 -`/neko` - Get Random Neko Image
+ &nbsp;
 -`/shinobu` - Get Random Shinobu Image
+ &nbsp;
 -`/megumin` - Get Random Megumin Image
 
 
@@ -17,4 +20,3 @@ A Discord bot to fetch random waifu images!
 ## Screenshot
 ![well](https://i.ibb.co/8BLY2Cz/waifupreview.png)
 
-Note : I am using a endpoint which provides SFW Waifu images, still the bot might sometimes return NSFW waifu images.

@@ -16,7 +16,7 @@ bot.on('message', (msg) => {
 
   const foundWord = targets.find((target) => msg.content.includes(target));
   if (foundWord) {
-    axios.get('https://api.waifu.pics/sfw/${foundWord}').then((response) => {
+    axios.get('https://api.waifu.pics/sfw${foundWord}').then((response) => {
 
       msg.channel.send(
         `Here you go ---> ${response.data.url}`

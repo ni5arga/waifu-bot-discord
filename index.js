@@ -1,8 +1,7 @@
 require('dotenv').config();
 
-import { Client } from 'discord.js';
-import { get } from 'axios';
-
+const Discord = require('discord.js');
+const axios = require('axios');
 const TOKEN = process.env.TOKEN;
 const Tsuzumi = new Client();
 // Prefix is /
@@ -20,7 +19,7 @@ Tsuzumi.on('message', (msg) => {
 
   const detectedCommand = commands.find((well) => msg.content.includes(well));
   if (detectedCommand) {
-    get('https://api.waifu.pics/${detectedCommand}').then((response) => {
+    axios.get('https://api.waifu.pics/${detectedCommand}').then((response) => {
 
       msg.channel.send(
         `Here you go ---> ${response.data.url}`

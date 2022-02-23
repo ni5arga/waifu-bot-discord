@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const axios = require('axios');
 const TOKEN = process.env.TOKEN;
 const bot = new Discord.Client();
-const targets = ['/waifu', '/neko', '/megumin', '/shinobu'];
+const targets = ['waifu', 'neko', 'megumin', 'shinobu'];
 
 bot.login(TOKEN);
 
@@ -16,7 +16,7 @@ bot.on('message', (msg) => {
 
   const foundWord = targets.find((target) => msg.content.includes(target));
   if (foundWord) {
-    axios.get('https://api.waifu.pics/sfw${foundWord}').then((response) => {
+    axios.get('https://api.waifu.pics/sfw/${foundWord}').then((response) => {
 
       msg.channel.send(
         `Here you go ---> ${response.data.url}`

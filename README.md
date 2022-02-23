@@ -3,11 +3,11 @@ A Discord bot to fetch random waifu images!
 ## Commands
 
 `/waifu` - Get Random Waifu Image
- &nbsp;
+</br>
 -`/neko` - Get Random Neko Image
- &nbsp;
+</br>
 -`/shinobu` - Get Random Shinobu Image
- &nbsp;
+</br>
 -`/megumin` - Get Random Megumin Image
 
 

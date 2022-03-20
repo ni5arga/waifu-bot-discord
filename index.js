@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const axios = require('axios');
 const TOKEN = process.env.TOKEN;
 const bot = new Discord.Client();
-const targets = ['-waifu', '!waifu', '/waifu', '=waifu'];
+const targets = ['-waifu'];
 
 bot.login(TOKEN);
 

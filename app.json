@@ -1,0 +1,32 @@
+{
+    "name": "Waifu Bot",
+    "logo": "https://telegra.ph//file/fde963d664d870a111c53.jpg",
+    "description": "Yet another discord bot to send random waifu images",
+    "keywords": [
+        "discord",
+        "waifu",
+        "discordjs",
+        "anime"
+    ],
+    "repository": "https://github.com/Nisarga-Developer/waifu-bot-discord",
+    "website": "https://github.com/Nisarga-Developer/waifu-bot-discord",
+    "success_url": "https://github.com/Nisarga-Developer/waifu-bot-discord",
+    "env": {
+        "TOKEN": {
+            "description": "Your discord bot token",
+            "required": "True"
+        }
+    },
+    "stack": "container",
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}

@@ -12,7 +12,7 @@ A Discord bot to fetch random waifu images!
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FNisarga-Developer%2Fwaifu-bot-discord&envs=TOKEN&TOKENDesc=Your+Discord+Bot+Token)
 ## Deploy To Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nisarga-Developer/waifu-bot-discord)
-## Deploy To Oketeto
+## Develop On Oketeto
 [![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy)
 ## Screenshot
 ![well](https://i.ibb.co/8BLY2Cz/waifupreview.png)

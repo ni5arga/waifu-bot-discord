@@ -17,3 +17,4 @@ A Discord bot to fetch random waifu images written in Javascript!
 ## Screenshot
 ![well](https://i.ibb.co/8BLY2Cz/waifupreview.png)
 
+

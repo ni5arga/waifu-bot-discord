@@ -1,5 +1,5 @@
 # Waifu Discord Bot
-A Discord bot to fetch random waifu images written in Javascript! 
+A Discord bot to fetch random anime waifu images written in Javascript! 
 ## Commands
 
 `-waifu` - Get random Waifu image

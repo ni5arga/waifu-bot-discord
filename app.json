@@ -16,6 +16,10 @@
             "description": "Your discord bot token",
             "required": "True"
         }
+        "CLIENT_ID": {
+            "description": "Your discord bot CLIENT_ID or APPLICATION_ID",
+            "required": "True"
+        }
     },
     "stack": "container",
     "buildpacks": [
